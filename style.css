@@ -722,3 +722,217 @@ img[src*="logo-actual"]{
 .footer-brand{
   background-color: transparent;
 }
+/* ==================================================
+   IDENTIDAD VISUAL - INFORMACIÓN DEL DOCUMENTO
+   ================================================== */
+
+.visual-info {
+  width: min(1180px, calc(100% - 40px));
+  margin: 45px auto;
+}
+
+
+/* BLOQUES */
+
+.visual-info-block {
+  padding: 28px 10px;
+  border-bottom: 1px solid rgba(196, 53, 10, 0.18);
+}
+
+.visual-info-block:first-child {
+  border-top: 1px solid rgba(196, 53, 10, 0.18);
+}
+
+
+/* TÍTULOS */
+
+.visual-info-block h2 {
+  margin: 0 0 12px;
+  color: #C4350A;
+  font-size: 27px;
+  line-height: 1.2;
+}
+
+
+/* TEXTOS */
+
+.visual-info-block p {
+  margin: 6px 0;
+  color: #5c5146;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+
+/* ==================================================
+   SIGNIFICADO DE LOS COLORES
+   ================================================== */
+
+.color-meaning {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px 45px;
+  margin-top: 20px;
+}
+
+.color-meaning > div {
+  display: grid;
+  grid-template-columns: 18px 125px 1fr;
+  align-items: center;
+  gap: 10px;
+  color: #5c5146;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+
+/* CÍRCULOS DE COLOR */
+
+.color-dot {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.color-dot-yellow {
+  background: #FFDD00;
+}
+
+.color-dot-green {
+  background: #406300;
+}
+
+.color-dot-red {
+  background: #C4350A;
+}
+
+.color-dot-orange {
+  background: #E67300;
+}
+
+
+/* NOMBRES DE LOS COLORES */
+
+.color-yellow {
+  color: #b99d00;
+}
+
+.color-green {
+  color: #406300;
+}
+
+.color-red {
+  color: #C4350A;
+}
+
+.color-orange {
+  color: #E67300;
+}
+
+
+/* ==================================================
+   TIPOGRAFÍAS
+   ================================================== */
+
+.font-info {
+  margin-top: 15px;
+}
+
+.font-info p {
+  margin: 7px 0;
+}
+
+.font-info strong {
+  display: inline-block;
+  min-width: 95px;
+  color: #C4350A;
+}
+
+
+/* ==================================================
+   DESCRIPCIÓN DEL LOGO ACTUAL
+   ================================================== */
+
+.logo-description-space p {
+  margin: 0;
+  padding: 10px 15px;
+  text-align: center;
+  color: #665b50;
+  line-height: 1.6;
+}
+
+.logo-description-space strong {
+  color: #C4350A;
+}
+
+
+/* ==================================================
+   CELULARES
+   ================================================== */
+
+@media (max-width: 700px) {
+
+  .visual-info {
+    width: calc(100% - 32px);
+    margin: 28px auto;
+  }
+
+  .visual-info-block {
+    padding: 22px 4px;
+  }
+
+  .visual-info-block h2 {
+    font-size: 22px;
+  }
+
+  .visual-info-block p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+
+  /* Un color por fila */
+
+  .color-meaning {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .color-meaning > div {
+    grid-template-columns: 15px 105px 1fr;
+    gap: 8px;
+    font-size: 14px;
+  }
+
+  .color-dot {
+    width: 13px;
+    height: 13px;
+  }
+
+
+  /* Tipografías */
+
+  .font-info strong {
+    min-width: 80px;
+  }
+
+}
+
+
+/* ==================================================
+   PANTALLAS MUY PEQUEÑAS
+   ================================================== */
+
+@media (max-width: 430px) {
+
+  .visual-info {
+    width: calc(100% - 26px);
+  }
+
+  .color-meaning > div {
+    grid-template-columns: 13px 95px 1fr;
+    font-size: 13px;
+  }
+
+}
